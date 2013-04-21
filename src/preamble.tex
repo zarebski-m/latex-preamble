@@ -1,0 +1,147 @@
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{stmaryrd}
+\usepackage{longtable}
+\usepackage[figuresright]{rotating}
+\usepackage{pifont}
+\usepackage{soul}
+\usepackage{microtype}
+
+\usepackage[cp1250]{inputenc}
+\usepackage[OT4]{fontenc}
+
+\usepackage[polish]{babel}
+
+\usepackage{geometry}
+\usepackage{pslatex}
+\usepackage[normalem]{ulem}
+\usepackage{paralist}
+
+\usepackage{lipsum}
+
+\usepackage{listings}
+
+\usepackage{color}
+\definecolor{szary}{gray}{0.6}% jasnoszary
+
+\usepackage{fourier} % utopia font + fourier
+
+\usepackage[%
+colorlinks=true%
+,linkcolor=blue%
+,urlcolor=blue%
+,backref=page%
+]{hyperref}
+
+\usepackage[%
+margin=10pt%
+,font={footnotesize,sf}%
+,labelfont=bf%
+,format=plain%
+,indent=1em%
+,labelsep=quad%
+,justification=raggedright%
+,singlelinecheck=false%
+,width=0.8\textwidth%
+,position=top%
+%,skip=1cm%
+]{caption}
+
+\setlength{\textwidth}{400pt}
+
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+
+\selectlanguage{polish}
+
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\TAB}{\hspace{0.50cm}}
+\newcommand{\IFF}{\leftrightarrow}
+\newcommand{\IMP}{\rightarrow}
+
+\newtheorem{theorem}{Twierdzenie}[section]
+\newtheorem{lemma}{Lemat}[section]
+\newtheorem{example}{Przyk³ad}[section]
+\newtheorem{corollary}{Wniosek}[section]
+\newtheorem{definition}{Definicja}[section]
+
+\hyphenation{
+   wszys-tkich wszys-tkie
+   ko-lu-mnê ko-lumn
+   ka¿-da ka¿-dy ka¿-de
+   od-leg-³oœæ od-leg-³oœ-ci
+   dzie-dzi-ny dzie-dzi-na
+   rów-nych rów-ny rów-na rów-ne
+   pole-ga pa-ra-met-rów wzo-rem po-cho-dzi
+   o-trzy-ma wte-dy wa-run-ko-wych lo-gicz-nie
+   skreœ-la-na skreœ-la-n¹ ca³-ko-wi-tych wzo-rów po-rz¹-dek po-rz¹d-kiem
+   przy-k³ad pod-zbio-rów po-miê-dzy re-pre-zen-to-wa-ne
+   rów-no-wa¿-ne bi-blio-te-kach wy-pro-wa-dza ma-te-ria-³ów
+   prze-ka-za-nym skoñ-czo-nym mo-¿esz na-tu-ral-na ci¹-gu tab-li-cy
+   prze-ka-za-nej œle-dzo-ne-go u¿yt-ko-wni-kom fun-kcjo-nal-noœæ mo¿-li-woœæ 
+   po-szcze-gól-nych znaj-do-wa-³a
+   Stereo-Cam
+   kon-tro-ler kon-tro-le-ry kon-tro-le-ra
+   or-to-go-nal-n¹ 
+   or-to-go-nal-nej or-to-go-nal-na or-to-go-nal-nym or-to-go-nal-nego
+   mar-ker mar-ke-ra 
+   naj-wiêk-sza naj-wiêk-sz¹ naj-wiêk-szy
+   przes-trze-ni prze-strzeñ prze-strze-ni¹ prze-strze-nia-mi
+   k¹-tem
+   stro-ny
+   ko-dów
+   pe³-ni pe³-nia
+   Ÿród-³o-wy Ÿród-³o-wych Ÿród-³o-we-go
+   p³asz-czyz-na p³asz-czyŸ-nie p³asz-czyz-na-mi p³asz-czyz-n¹ p³asz-czyz-nom p³asz-czyz-nê
+   uwzg-lêd-nie-nie uwzg-lêd-nie-niem uwzg-lêd-nie-nia uwzg-lêd-nia-j¹c 
+}
+
+\renewcommand{\abstractname}{Streszczenie}
+
+% Dostosowanie wygladu listingow.
+\definecolor{bgcolor}{gray}{0.98} % Kolor tla listingu
+\definecolor{numbercolor}{gray}{0.4} % Kolor numeru linii kodu
+\definecolor{codecolor}{gray}{0.01} % Kolor kodu
+\definecolor{keywordcolor}{rgb}{0.00, 0.00, 0.55} % Kolor slowa kluczowego
+\definecolor{commentcolor}{rgb}{0.40, 0.70, 0.30} % Kolor komentarza w kodzie
+\lstset{%
+,basicstyle=\color{codecolor}\footnotesize\ttfamily % Podstawowy styl fontu
+,keywordstyle=\color{keywordcolor}\bfseries % Styl slowa kluczowego
+,numberstyle=\scriptsize\color{numbercolor} % Styl numeracji
+,commentstyle=\color{commentcolor}\slshape  % Styl komentarza
+,showstringspaces=false % Wyroznianie spacji w lancuchu
+,tabsize=2              % Rozmiar tabulatora
+,numbers=left           % Wyswietlanie numerow po lewej stronie
+,numbersep=1.2em        % Odleglosc numeracji od kodu
+,stepnumber=1           % Numeruj wszystkie linie
+,xleftmargin=1.2em      % Lewy margines
+,xrightmargin=1.2em     % Prawy margines
+,breaklines=true        % Lam wiersze w listingu
+,breakatwhitespace=true % Lam wiersze tylko w miejscu odstepu
+,frame=TB               % Krawedzie ramki: tylko gora i dol
+,framextopmargin=1ex    % Wewnetrzny margines gorny
+,framexbottommargin=1ex % Wewnetrzny margines dolny
+,framexleftmargin=1ex   % Wewnetrzny margines lewy
+,framexrightmargin=1ex  % Wewnetrzny margines prawy
+,backgroundcolor=\color{bgcolor} % Kolor tla listingu
+,postbreak=\ding{229}   % Znak wstawiany po zlamaniu linii kodu
+,basewidth=0.5em        % Odstep miedzyliterowy
+,breakautoindent=false  % Automatyczne wciecie przeniesionej linii
+,belowcaptionskip=1.5ex % Odstep miêdzy podpisem a kodem
+}
+
+\linespread{1.22}  % Interlinia 1.5
+
+\newcommand{\project}{\emph{StereoCam}}
+\newcommand{\strong}[1]{\textbf{#1}}
+
+\newcommand{\reg}{\textsuperscript{\textregistered}}
+\newcommand{\cop}{\textsuperscript{\textcopyright}}
+\newcommand{\tm}{\textsuperscript{\texttrademark}}
